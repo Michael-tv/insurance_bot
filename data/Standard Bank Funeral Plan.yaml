@@ -1,0 +1,120 @@
+---
+0:
+  "options":
+    - "Whose lives can be assured?" 
+    - "How many lives can be assured?"
+  "answer": " 
+  - His/her Spouse (up to 3 spouses)\n
+  - Up to 6 Children\n
+  - Up to 8 Extended Family\n
+  - Up to 4 Parents and Parents-in-law under this policy"
+1:
+  "options":
+    - "What is the cover amount?"
+    - "For how much am I covered?"
+    - "How much is the insurance payout?"
+  "answer": "
+| Life Insured    | Min Entry Age | Max Entry Age            | Cover Amount                 |\n
+|-----------------|---------------|--------------------------|------------------------------|\n
+| Policyholder    | 18 Years      | 65 Years                 | R100 000                     |\n
+| Spouse          | 18 Years      | 65 Years                 | R100 000                     |\n
+| Stilborn        | 0 Years       | 3 Months                 | R5 000                       |\n
+| Child           | 3 Months      | 5 Years                  | R20 000                      |\n
+| Child           | 6 Years       | 14 Years                 | R50 000                      |\n
+| Child           | 14 Years      | 20 Years (24 if student) | 100% of child benefit amount |\n
+| Parent          | 26 Years      | 85 Years                 | R80 000                      |\n
+| Extended Family | 0 Years       | 85 Years                 | R50 000                      |\n
+
+Double the funeral benefit will be paid in case of accedental death
+"
+
+2:
+  "options":
+    - "What is the waiting period?"
+  "answer": "The Waiting Period will be 6 months for all Life Assureds covered under this policy and for all benefits selected. No benefits will be paid during the Waiting Period. If any Life Assured dies due to natural causes during the Waiting Period, we will refund the Premiums paid for that particular Life Assured. The Waiting Period will not apply if any Life Assured dies because of an Accident.
+"
+
+...
+
+# Excusions :
+
+
+# "Policy Benifits": 
+# Funeral benefit
+# The Funeral benefit will pay out a Benefit Amount when any of the Lives
+# Assured under this policy dies. Claims will be paid within 48 hours of
+# receiving all the necessary documentation.
+# On the death of a baby up to three months old or a Stillborn Child, a
+# Funeral benefit will be paid provided that:
+# • the Policyholder/Principal Life Assured or Spouse (if insured under
+# this policy) is the mother, and
+# • the death occurs after the 6-month Waiting Period.
+# The Funeral benefit payable for Children (including babies) is restricted
+# by law. This restriction also applies on any increases in the Benefit
+# Amount (even through automatic benefit increases, if selected) from the
+# date of that increase.
+
+# The Funeral benefit pays a maximum of 2 Stillborn claims per policy
+# (and per Life Assured if covered under more than one policy).
+#   Double Accidental Death benefit
+# Should the Policyholder/Principal Life Assured or Spouse (if insured
+# under this policy) die because of an Accident (and within 14 days of
+# the Accident) the Funeral benefit will be paid plus an additional amount
+# equal to the Funeral benefit.
+# The benefit does not apply in the event of the Life Assured committing
+# suicide.
+# Premium Waiver
+# To qualify for the Premium Waiver benefit to be paid, the policy must
+# have been active for 6 months, with at least 6 premiums being paid.
+# Should the Principal Life Assured die, the remaining family members on
+# the policy will remain covered for a further 6 months and no premiums
+# will be payable.
+# No changes (other than administrative) will be allowed on the policy during
+# the premium waiver period. This benefit can only be claimed once.
+# After 6 months, the spouse (or any adult member on the policy over
+# the age of 18), will have the option to take over the policy as the
+# Policyholder (with new premiums quoted for the new Policyholder).
+# Payment of premiums will resume at this point and the Policyholder will
+# need to make arrangements to pay the premiums.
+# If the policy is not transferred to the spouse or another adult member
+# on the policy, the policy and all related benefits will end.
+#   Memorial benefit (if selected)
+# The Memorial benefit will pay a Benefit Amount to the beneficiary when
+# the Policyholder/Principal Life Assured or Spouse (if insured under this
+# benefit) dies. This benefit is paid in addition to the Funeral benefit.
+# However, this benefit is only payable if the Funeral claim is accepted as
+# a valid claim as per the Terms and Conditions of this policy.
+#   Catering benefit (if selected)
+# The Catering benefit will pay a Benefit Amount to the beneficiary when
+# the Policyholder/Principal Life Assured or Spouse (if insured under this
+# benefit) dies. This benefit is paid in addition to the Funeral benefit.
+# However, this benefit is only payable if the Funeral claim is accepted as
+# a valid claim as per the Terms and Conditions of this policy.
+#   Grocery benefit (if selected)
+# The Grocery Benefit is a set amount paid monthly for the purpose of
+# the cost of groceries for the family when the Policyholder/Principal Life
+# Assured or Spouse (if insured under this benefit) dies.
+# The amount is paid for the number of months initially selected (6 or 12
+# months), after the death of the life assured.
+# • The first payment will be within 30 days after the death if all rules
+# for claiming have been followed and it is a valid claim;
+# • The policy must have been in force for the required waiting period
+# of 6 months and all monthly premiums paid in full.
+# However, this benefit is only payable if the Funeral claim is accepted as
+# a valid claim as per the Terms and Conditions of this policy.
+# Repatriation Benefit (if selected)
+# The Repatriation benefit will pay a Benefit Amount to the Policyholder/
+# Beneficiary when the Life Assured under the benefit dies. This benefit
+# is paid in addition to the Funeral benefit and is intended to cover the
+# cost of repatriation of the body to the place of burial.
+# The benefit does not provide the actual repatriation service and this
+# must be separately arranged. The actual cost of a repatriation may be
+# different to the Benefit Amount payable.
+# This benefit is only payable if the Funeral claim is accepted as a valid
+# claim as per the Terms and Conditions of this policy.
+# Airtime benefit (if selected)
+# The Airtime benefit will pay a Benefit Amount to the Policyholder/
+# Beneficiary when the Life Assured under the benefit dies. This benefit
+# is paid in addition to the Funeral benefit.
+# This benefit is only payable if the Funeral claim is accepted as a valid
+# claim as per the Terms and Conditions of this policy
