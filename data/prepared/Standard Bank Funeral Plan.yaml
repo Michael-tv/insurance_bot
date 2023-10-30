@@ -1,0 +1,86 @@
+---
+"document info":
+  "plan name": Standard Bank Funeral Plan
+  "Link to document": https://www.standardbank.co.za/static_file/South%20Africa/PDF/Insuring/2022/Flexi_FuneraPlan_TandCs_March%202022.pdf
+
+"responses":
+  0:
+    "options":
+      - "Whose lives can be assured?" 
+      - "How many lives can be assured?"
+    "answer": "
+    - Policy Holder\n
+    - His/her Spouse (up to 3 spouses)\n
+    - Up to 6 Children\n
+    - Up to 8 Extended Family\n
+    - Up to 4 Parents and Parents-in-law under this policy\n"
+    "ref": "Paragraph 2.1"
+
+  1:
+    "options":
+      - "What is the cover amount?"
+      - "For how much am I covered?"
+      - "How much is the insurance payout?"
+      - "What is the maximum payout?"
+    "answer": "
+  | Life Insured    | Min Entry Age | Max Entry Age            | Cover Amount                 |\n
+  |-----------------|---------------|--------------------------|------------------------------|\n
+  | Policyholder    | 18 Years      | 65 Years                 | R100 000                     |\n
+  | Spouse          | 18 Years      | 65 Years                 | R100 000                     |\n
+  | Stillborn       | 0 Years       | 3 Months                 | R5 000                       |\n
+  | Child           | 3 Months      | 5 Years                  | R20 000                      |\n
+  | Child           | 6 Years       | 14 Years                 | R50 000                      |\n
+  | Child           | 14 Years      | 20 Years (24 if student) | 100% of child benefit amount |\n
+  | Parent          | 26 Years      | 85 Years                 | R80 000                      |\n
+  | Extended Family | 0 Years       | 85 Years                 | R50 000                      |\n
+
+  Double the funeral benefit will be paid in case of accidental death\n"
+    "ref": "Paragraph 3.3"
+
+  2:
+    "options":
+      - "What is the waiting period?"
+      - "How long before the policy becomes active?"
+    "answer": "The Waiting Period will be 6 months for all Life Assureds covered under this policy and for all benefits selected. No benefits will be paid during the Waiting Period. If any Life Assured dies due to natural causes during the Waiting Period, we will refund the Premiums paid for that particular Life Assured. The Waiting Period will not apply if any Life Assured dies because of an Accident.\n"
+    "ref": "Paragraph 3.5"
+
+  3:
+    "options":
+      - "What are the policy benefits?"
+      - "What are the benefits?"
+      - "Policy benefits?"
+    "answer": "the policy benefits are:\n 
+Funeral Benefit - The Funeral benefit will pay out a Benefit Amount when any of the Lives Assured under this policy dies\n
+Premium Waiver - To qualify for the Premium Waiver benefit to be paid, the policy must have been active for 6 months, with at least 6 premiums being paid. Should the Principal Life Assured die, the remaining family members on the policy will remain covered for a further 6 months and no premiums will be payable.\n
+Memorial benefit (if selected) - The Memorial benefit will pay a Benefit Amount to the beneficiary when the Policyholder/Principal Life Assured or Spouse (if insured under this benefit) dies. This benefit is paid in addition to the Funeral benefit.\n
+Catering benefit (if selected) - The Catering benefit will pay a Benefit Amount to the beneficiary when the Policyholder/Principal Life Assured or Spouse (if insured under this benefit) dies. This benefit is paid in addition to the Funeral benefit.\n
+Grocery benefit (if selected) - The Grocery Benefit is a set amount paid monthly for the purpose of the cost of groceries for the family when the Policyholder/Principal Life Assured or Spouse (if insured under this benefit) dies. The amount is paid for the number of months initially selected (6 or 12 months), after the death of the life assured.\n
+The Repatriation benefit  - will pay a Benefit Amount to the Policyholder/Beneficiary when the Life Assured under the benefit dies.\n
+Airtime benefit (if selected) - The Airtime benefit will pay a Benefit Amount to the Policyholder/Beneficiary when the Life Assured under the benefit dies. This benefit is paid in addition to the Funeral benefit.\n"
+    "ref": "Paragraph 3"
+
+  4:
+    "options":
+      - "What does it cost?"
+      - "What does the policies cost?"
+    "answer": "Please contact the respective provider for quotes"
+    "ref": ""
+
+  5: 
+    "options":
+      - "How do I claim?"
+      - "How do I make a claim?"
+    "answer": "
+  - Phoning our Funeral Plan Claims Helpline on 0860 123 999; or\n
+  - Contacting your nearest Standard Bank branch\n"
+    "ref": "Paragraph 10"
+
+  6: 
+    "options":
+      - "How do I cancel my policy?"
+      - "How do I terminate my policy?"
+      - "How do I cancel my cover?"
+    "answer": "If you wish to cancel your policy, you need to provide us with 31 days notice of your request to cancel the policy.\n"
+    "ref": "Paragraph 9"
+ 
+...

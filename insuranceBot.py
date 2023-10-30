@@ -1,4 +1,8 @@
 import string
+import random
+import re
+import time
+import os
 
 import yaml
 
@@ -12,17 +16,79 @@ import numpy as np
 
 from fuzzywuzzy import fuzz
 
-# nltk.download('wordnet')
 nltk.download('stopwords')
 
 
 #==================================================================================
-# IO Functions
+def quitCheck(text):
+    quitStrings = ['q', 'quit', 'exit', 'no']
+    
+    text = text.lower()
+    text = re.sub('[ .\s]', '', text)
+    
+    if text in quitStrings:
+        return True
+    else:
+        return False
 
+def halEnd():
+    os.system('cls')
+    
+    print(
+"""There is a flower within my heart, Daisy, Daisy!\n
+Planted one day by a glancing dart,\n
+Planted by Daisy Bell!\n
+Whether she loves me or loves me not,\n
+Sometimes it's hard to tell;\n
+Yet I am longing to share the lot\n
+Of beautiful Daisy Bell!\n
+...\n
+""")
+    time.sleep(5)
+    os.system('cls')
+    
+    
+def genExampleQuestion(dataSets):
+    # Select random dataset
+    randDataset = random.choice(list(dataSets.items()))
+    
+    # Select random question set
+    randQuestionSet = random.choice(list((randDataset[1]['responses']).items()))
+
+    #Select random question
+    randQuestion = random.choice(randQuestionSet[1]['options'])
+ 
+    return randQuestion
+
+# IO Functions
 def readLib(file):
     with open(file) as f:
         data = yaml.load(f, yaml.Loader)
     return data
+  
+  
+def planSelectionErrorCheck(toCompare, numPolicies):
+    try:
+        toCompare = [int(x) for x in toCompare]
+        fault = False
+    except ValueError:
+        fault = True
+    
+    if fault == True:
+        print('Not all entered elements are numbers, please retry')
+    elif toCompare == '':
+        print('no values to compare specified, please retry')
+        fault = True
+    elif len(toCompare) == 0:
+        print('no values to compare specified, please retry')
+        fault = True
+    elif max(toCompare) > numPolicies - 1:
+        print('Non-Valid options selected for plans to compare, please retry')
+        fault = True
+    else:
+        fault = False
+        
+    return fault
 
 #==================================================================================
 # Text processing and cleaning functions
@@ -65,7 +131,7 @@ def textPreprocess_2(text):
 
 
 def textPreprocess_3(text):
-       
+    
     # Remove punctuation
     for pElem in string.punctuation:
         text = text.replace(pElem, '')    

@@ -1,0 +1,84 @@
+---
+"document info":
+  "plan name": Capitec Funeral Plan
+  "Link to document": https://www.capitecbank.co.za/globalassets/pages/documents-library/funeral-plans-documents/funeral-cover-plan-agreement-2022.pdf
+
+"responses":
+  0:
+    "options":
+      - "Whose lives can be assured?"
+      - "How many lives can be assured?"
+    "answer": "
+    - Policy Holder\n
+    - His/her Spouse (up to 1 spouses)\n
+    - Up to 8 Children\n
+    - Up to 8 Extended Family\n
+    - Up to 4 Parents and Parents-in-law under this policy\n"
+    "ref": "Paragraph 11.4"
+  1:
+    "options":
+      - "What is the cover amount?"
+      - "For how much am I covered?"
+      - "How much is the insurance payout?"
+      - "What is the maximum payout?"
+    "answer": "
+    | Life Insured    | Min Entry Age | Max Entry Age | Cover Amount |\n
+    |-----------------|---------------|---------------|--------------|\n
+    | Policyholder    | 18 Years      | 64 Years      | R100 000     |\n
+    | Spouse          | 18 Years      | 64 Years      | R100 000     |\n
+    | Stillborn       | > 28 weeks    |               | R1000        |\n
+    | Child           | 0 Years       | 5 Years       | R100 000     |\n
+    | Child           | 6 Years       | 13 Years      | R100 000     |\n
+    | Child           | 14 Years      | 24 Yeas       | R100 000     |\n
+    | Parent          | 26 Years      |Years 85       | R100 000     |\n
+    | Extended Family | 0 Years       | 85 Years      | R100 000     |\n
+
+    Double the funeral benefit will be paid in case of accidental death, not applicable to stillborn\n"
+    "ref": "Paragraph 11.4"
+  2:
+    "options":
+      - "What is the waiting period?"
+      - "How long before the policy becomes active?"
+    "answer": "A waiting period applies to the Funeral Benefit, Newborn Premium Waiver Benefit, Voluntary Policy Pause Benefit and the Death Premium Waiver Benefit. The waiting period is calculated from the Life Assured’s Cover Start Date. If the Cover Amount is increased the waiting period will apply to the increased portion of the Cover Amount. There is no waiting period for death due to an Accident. Death due to suicide will be treated as a non-accidental death. The duration of the waiting periods are 6 Months except for stillborn where the Policy holder must have completed the waiting period.\n"
+    "ref": "Paragraph 11.4"
+
+  3:
+    "options":
+      - "What are the policy benefits?"
+      - "What are the benefits?"
+      - "Policy benefits?"
+    "answer": "the policy benefits are:\n 
+Funeral Benefit - This benefit pays the Cover Amount when a Life Assured dies.\n
+Burial Repatriation Benefit - This benefit covers the repatriation of mortal remains of a Life Assured.\n
+Stillborn Cover - This benefit pays R1 000 on the birth of a Stillborn if You or Your Spouse gave birth to the Stillborn.\n"
+    "ref": "Paragraph 7"
+  
+  4:
+    "options":
+      - "What does it cost?"
+      - "What does the policies cost?"
+    "answer": "Please contact the respective provider for quotes"
+    "ref": ""
+
+  5: 
+    "options":
+      - "How do I claim?"
+      - "How do I make a claim?"
+    "answer": "
+  - You may submit a claim at any Capitec branch, or\n
+  - You may call the Capitec Client Care Centre on 0860 10 20 43, or\n
+  - You may email Capitec at FuneralClaims@capitecbank.co.za\n"
+    "ref": "Paragraph 12.2"
+
+  6: 
+    "options":
+      - "How do I cancel my policy?"
+      - "How do I terminate my policy?"
+      - "How do I cancel my cover?"
+    "answer": "Please notify Capitec of Your decision by way of communication via any of the following channels:\n
+  - The Capitec branch network\n
+  - The Client Care Centre on 0860 10 2043; or\n
+  - An email to the Client Care Centre at ClientCare@capitecbank.co.za\n"
+    "ref": "Paragraph 8.3"
+
+...
