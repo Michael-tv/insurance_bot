@@ -8,6 +8,8 @@
   - Up to 6 Children\n
   - Up to 8 Extended Family\n
   - Up to 4 Parents and Parents-in-law under this policy"
+  "ref": "Paragraph 2.1"
+
 1:
   "options":
     - "What is the cover amount?"
@@ -27,13 +29,13 @@
 
 Double the funeral benefit will be paid in case of accedental death
 "
+  "ref": "Paragraph 3.3"
 
 2:
   "options":
     - "What is the waiting period?"
-  "answer": "The Waiting Period will be 6 months for all Life Assureds covered under this policy and for all benefits selected. No benefits will be paid during the Waiting Period. If any Life Assured dies due to natural causes during the Waiting Period, we will refund the Premiums paid for that particular Life Assured. The Waiting Period will not apply if any Life Assured dies because of an Accident.
-"
-
+  "answer": "The Waiting Period will be 6 months for all Life Assureds covered under this policy and for all benefits selected. No benefits will be paid during the Waiting Period. If any Life Assured dies due to natural causes during the Waiting Period, we will refund the Premiums paid for that particular Life Assured. The Waiting Period will not apply if any Life Assured dies because of an Accident."
+  "ref": "Paragraph 3.5"
 ...
 
 # Excusions :

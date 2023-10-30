@@ -8,7 +8,7 @@
   - Up to 8 Children\n
   - Up to 8 Extended Family\n
   - Up to 4 Parents and Parents-in-law under this policy"
-
+  "ref": "Paragraph 11.4"
 1:
   "options":
     - "What is the cover amount?"
@@ -28,18 +28,19 @@
 
   Double the funeral benefit will be paid in case of accedental death, not applicable to stillborn
   "
-
+  "ref": "Paragraph 11.4"
 2:
   "options":
     - "What is the waiting period?"
   "answer": "A waiting period applies to the Funeral Benefit, Newborn Premium Waiver Benefit, Voluntary Policy Pause Benefit and the Death Premium Waiver Benefit. The waiting period is calculated from the Life Assured’s Cover Start Date. If the Cover Amount is increased the waiting period will apply to the increased portion of the Cover Amount. There is no waiting period for death due to an Accident. Death due to suicide will be treated as a non-accidental death. The duration of the waiting periods are 6 Months except for stillborn where the Policy holder must have completed the waiting period."
-
+  "ref": "Paragraph 11.4"
 
 
 3:
   "options":
     - "What does the policy consist of?"   
   "answer": "This Funeral Cover Plan consists of the Funeral Cover Plan Schedule, and the Funeral Cover Plan Terms and Conditions. You will be provided with a Summary of Benefits, Conditions, Limitations and Exclusions document and a Disclosure Notice which does not form part of this Funeral Cover Plan."
+  "ref": "Paragraph 7"
 
 4:
   "options":
@@ -51,7 +52,7 @@
     - when We cancel Your Funeral Cover Plan due to
     - non-payment of premiums.
 "
-
+  "ref": "Paragraph 4"
 
 
 # "Policy Benefits": " 
