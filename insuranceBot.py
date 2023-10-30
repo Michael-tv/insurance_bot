@@ -12,17 +12,20 @@ import numpy as np
 
 from fuzzywuzzy import fuzz
 
-nltk.download('wordnet')
+# nltk.download('wordnet')
 nltk.download('stopwords')
 
 
 #==================================================================================
+# IO Functions
+
 def readLib(file):
     with open(file) as f:
         data = yaml.load(f, yaml.Loader)
     return data
 
 #==================================================================================
+# Text processing and cleaning functions
 
 def textPreprocess_1(text):
     
@@ -88,39 +91,37 @@ def textPreprocess_3(text):
     return ' '.join(lemmaTokens)
 
 #==================================================================================
+# String matching functions
 
-def textMatch_1(text, lib):
+def textMatch_1(query, dataSet):
     """
-    Clean
-    -----
+    Clean Operations
+    ----------------
       - Remove punctuation
       - Remove Duplicate spaces
       - Lower text
       - Lemmatize text
     
-    Match
-    -----
+    MatchMethod
+    -----------
       - Fuzz ratio
     """
-    
-    # lib = [num, options, answer]
-    
-    
-    text = textPreprocess_2(text)
-       
+
+    query = textPreprocess_1(query)
+
     #Check all entries in lib
     res = []
     matches = []
-    for ent in lib:
-        entClean = textPreprocess_2(ent)    
-        matches.append(ent)
-        res.append(fuzz.ratio(text, entClean))
-    
-    return np.argsort(res), res
-      
-#-----------------------------------------------------------------------------------
+    # Iterate though all possible responses
+    for response in dataSet:
+        responseClean = textPreprocess_1(response)       
+        res.append(fuzz.ratio(query, responseClean))
+        matches.append(response)
+        
+    return np.argsort(res)[::-1], res
 
-def textMatch_2(text, lib):
+
+def textMatch_2(query, dataSet):
     """
     Clean
     -----
@@ -132,21 +133,25 @@ def textMatch_2(text, lib):
     Match
     -----
       - Fuzz Partial_ratio
+      - Find best match between all options
     """
     
-    text = textPreprocess_2(text)
-       
+    query = textPreprocess_2(query)
+
     #Check all entries in lib
     res = []
     matches = []
-    for ent in lib:
-        entClean = textPreprocess_2(ent)    
-        matches.append(ent)
-        res.append(fuzz.partial_ratio(text, entClean))
+    # Iterate though all possible responses
+    for idx, response in dataSet.items():
+        # Find max value for all questions in the synonym list
+        optRes = []
+        for opt in response['options']:
+            optClean = textPreprocess_2(opt)
+            optRes.append(fuzz.partial_ratio(query, optClean))
+        matches.append(idx)
+        res.append(max(optRes))
+    return np.argsort(res)[::-1], res
 
-    return np.argsort(res), res
-
-#-----------------------------------------------------------------------------------
 
 def textMatch_3(query, dataSet):
     """
@@ -161,30 +166,27 @@ def textMatch_3(query, dataSet):
     Match
     -----
       - Fuzz ratio
+      - Find best match between all options
     """
-                    
+
     query = textPreprocess_3(query)
-       
+
     #Check all entries in lib
     res = []
-    
-    for entry in dataSet.keys():
-        
+    matches = []
+    # Iterate though all possible responses
+    for idx, response in dataSet.items():
+        # Find max value for all questions in the synonym list
         optRes = []
-        for opt in entry['options']:
-            optClean = textPreprocess_3(opt)    
+        for opt in response['options']:
+            optClean = textPreprocess_3(opt)
             optRes.append(fuzz.partial_ratio(query, optClean))
-        
-        breakpoint()
-        np.argsort(optRes)
-        #Find max option match 
-        
-        matches.append(opt)
-    return np.argsort(res), res
+        matches.append(idx)
+        res.append(max(optRes))
+    return np.argsort(res)[::-1], res
 
-#-----------------------------------------------------------------------------------
 
-def textMatch_4(text, lib):
+def textMatch_4(query, dataSet):
     """
     Clean
     -----
@@ -197,54 +199,57 @@ def textMatch_4(text, lib):
     Match
     -----
       - Fuzz token_sort_ratio
+      - Find best match between all options
     """
-                           
-    text = textPreprocess_3(text)
-       
+
+    query = textPreprocess_3(query)
+
     #Check all entries in lib
     res = []
     matches = []
-    for ent in lib:
-        entClean = textPreprocess_3(ent)    
-        matches.append(ent)
-        res.append(fuzz.token_sort_ratio(text, entClean))
+    # Iterate though all possible responses
+    for idx, response in dataSet.items():
+        # Find max value for all questions in the synonym list
+        optRes = []
+        for opt in response['options']:
+            optClean = textPreprocess_3(opt)    
+            optRes.append(fuzz.token_sort_ratio(query, optClean))
+        matches.append(idx)
+        res.append(max(optRes))
+    return np.argsort(res)[::-1], res
 
-    return np.argsort(res), res
-
-#-----------------------------------------------------------------------------------
 
 def textMatch_5(query, dataSet):
     """
-    Clean
-    -----
+    Preprocess Operations
+    ---------------------
       - Remove punctuation
       - Remove Duplicate spaces
       - Lower text
       - Lemmatize text
       - Remove stopwords
     
-    Match
-    -----
+    Match Method
+    ------------
       - Fuzz token_set_ratio
+      - Find best match between all options
     """
 
     query = textPreprocess_3(query)
-       
+
     #Check all entries in lib
     res = []
     matches = []
     # Iterate though all possible responses
-    for id, response in dataSet.items():
+    for idx, response in dataSet.items():
         # Find max value for all questions in the synonym list
-        optRes = []       
+        optRes = []
         for opt in response['options']:
             optClean = textPreprocess_3(opt)    
             optRes.append(fuzz.token_set_ratio(query, optClean))
-        matches.append(id)
-        res.append(max(optRes))   
+        matches.append(idx)
+        res.append(max(optRes))
     return np.argsort(res)[::-1], res
 
 
-#-----------------------------------------------------------------------------------
 
-    
